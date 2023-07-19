@@ -1,95 +1,106 @@
-// const technologySlide = [
-//   {
-//     id: 1,
-//     imageSrc:
-//       "/assets/officeimg.png",
-//     imageAlt: "SEM Research.",
-//     heading1: "SEM Research",
-//     heading2: `There are many variations of passages of Lorem Ipsum available but the majority have
-//                suffered alteration in some form, by inject humour, or randomised words which`,
-//   },
-//   // More products...
-// ];
-
-// const Technology = () => {
-//   return (
-//     <div className="bg-white bg-[url('/assets/technologysols.png')]">
-//       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-//         <div className="text-center">
-//           <h2 className="text-2xl text-white mb-5">Technology solutions</h2>
-//           <h1 className="text-5xl text-white">
-//             We Provide IT & Business Solutions
-//           </h1>
-//         </div>
-
-//         <div className="mt-20 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-//           {technologySlide.map((technologySlide) => (
-//             <div key={technologySlide.id} className="group relative">
-//               <div className="aspect-h-1 aspect-w-1 w-[350px] text-center p-10 overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75">
-//                 <div>
-//                   <img
-//                     src={technologySlide.imageSrc}
-//                     alt={technologySlide.imageAlt}
-//                     className="h-full w-full object-cover object-center lg:h-full lg:w-full mb-5"
-//                   />
-//                 </div>
-//                 <h1 className="text-2xl">{technologySlide.heading1}</h1>
-//                 <p>{technologySlide.heading2}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Technology;
-
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-export default function App() {
+const Technology = () => {
   return (
     <>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/vrimg.webp" alt="" />
-        </SwiperSlide>
-      </Swiper>
+      <div className="bg-[url('/assets/technologysols.png')]">
+        <div className="text-center">
+          <h2 className="text-2xl text-white mb-5 pt-24">
+            Technology solutions
+          </h2>
+          <h1 className="text-5xl text-white font-semibold">
+            We Provide IT & Business Solutions
+          </h1>
+        </div>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper mx-24 py-20"
+        >
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg.png"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg3.webp"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg.png"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg.png"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg.png"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className="text-center bg-white rounded-md">
+            <img
+              src="/assets/officeimg.png"
+              alt=""
+              className="mx-auto mt-10 mb-5"
+            />
+            <h1 className="mb-3 text-2xl font-bold">Product Development</h1>
+            <p className="mx-4 text-slate-600 mb-14">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered.
+            </p>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
   );
-}
+};
+export default Technology;
