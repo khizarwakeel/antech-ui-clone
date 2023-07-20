@@ -4,12 +4,12 @@ function Discover() {
   return (
     <div>
       <div className="bg-white dark:bg-gray-900">
-        <div className="grid max-w-screen-xl px-20 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="grid max-w-screen-xl lg:px-20 xl:px-20 px-5  py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h2 className="text-2xl mb-5 text-[#0d6efd]">
               Discover Our Company
             </h2>
-            <h3 className="text-5xl font-medium mb-16">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-medium mb-16">
               Bringing New IT Business <br /> Solutions And Ideas
             </h3>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
@@ -23,13 +23,17 @@ function Discover() {
                 alt="Connection"
                 className="mr-5"
               />
-              <p className="mr-5">Website Development</p>
+              <p className="mr-5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+                Website Development
+              </p>
               <img
                 src="/assets/webicons.png"
                 alt="Connection"
                 className="mr-5"
               />
-              <p>Internal Networking</p>
+              <p className="text-sm md:text-lg lg:text-xl xl:text-2xl">
+                Internal Networking
+              </p>
             </div>
             <a
               href="#"

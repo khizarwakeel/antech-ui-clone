@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <img
-              className="h-24 w-48 -ml-7"
+              className="h-20 w-36 xl:h-24 xl:w-48 xl:-ml-5 lg:h-20 lg:w-28"
               src="/assets/Antech-Logo.svg"
               alt="antech"
             />
@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900 outline-none">
+            <Popover.Button className="flex items-center gap-x-1 xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900 outline-none">
               Home
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -97,14 +97,20 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900"
+          >
             About
           </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900"
+          >
             Services
           </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900 outline-none">
+            <Popover.Button className="flex items-center gap-x-1 xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900 outline-none">
               Pages
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -130,11 +136,14 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900"
+          >
             Portfolio
           </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900 outline-none">
+            <Popover.Button className="flex items-center gap-x-1 xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900 outline-none">
               Blog
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -160,12 +169,15 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="xl:text-xl lg:text-sm font-semibold leading-6 text-gray-900"
+          >
             Contact
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="bg-[#0d6efd] text-white w-40 py-3 px-6 rounded-full">
+          <button className="bg-[#0d6efd] text-white w-40 py-3 px-6 rounded-full lg:w-32 lg:py-2 lg:px-0 ">
             Start a Project
           </button>
         </div>
