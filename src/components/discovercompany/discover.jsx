@@ -4,7 +4,7 @@ function Discover() {
   return (
     <div>
       <div className="bg-white dark:bg-gray-900">
-        <div className="grid max-w-screen-xl lg:px-20 xl:px-20 px-5  py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="grid max-w-screen-xl lg:px-20 xl:px-20 px-5  py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 xl:my-14 lg:my:14 md:my-14">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h2 className="text-2xl mb-5 text-[#0d6efd]">
               Discover Our Company

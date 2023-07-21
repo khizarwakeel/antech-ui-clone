@@ -4,18 +4,18 @@ const Footer = () => {
   return (
     <footer class="bg-[#01070e] text-center text-white dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
       <div class="flex items-center justify-center pt-24 dark:border-neutral-500 lg:justify-between">
-        <div className="text-center py-[2%] bg-white mx-auto w-[80%] flex items-center justify-center rounded-xl">
-          <h2 className="text-xl font-bold mr-24  text-slate-400">
+        <div className="text-center py-[5%] px-[2%]  bg-white mx-auto w-[80%] lg:flex lg:flex-row flex flex-col items-center justify-center rounded-xl">
+          <h2 className="text-xl font-bold xl:mr-24 lg:mr-10  text-slate-400 mb-5">
             Join IT Solution Our Community
           </h2>
-          <form className="relative w-[50%]">
+          <form className="relative w-full">
             <input
               type="text"
               placeholder="Enter your email address"
               required
-              className="w-full bg-[#ecf5ff] py-6 px-2 rounded-md font-semibold outline-none text-slate-400"
+              className="lg:w-full  md:w-[50%] bg-[#ecf5ff] py-4 px-4  xl:py-6 xl:px-2 lg:py-6 lg:px-2  rounded-md font-semibold outline-none text-slate-400"
             />
-            <button className="text-white font-bold rounded-lg absolute m-2 top-0 right-0 bottom-0 bg-slate-700 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-7">
+            <button className="text-white font-bold mt-5 rounded-lg lg:absolute xl:m-2 lg:m-2 py-4 top-0 right-0 bottom-0 bg-slate-700 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% px-7">
               Subscribe Now
             </button>
           </form>
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 px-24">
+        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:px-24 md:px-16">
           <div>
             <img src="/assets/Antech-Logo.svg" alt="" className="mb-6" />
             <p>

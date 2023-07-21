@@ -24,11 +24,11 @@ const posts = [
 const OurLatest = () => {
   return (
     <>
-      <div className="grid gap-2 lg:grid-cols-3 mx-16 my-28">
+      <div className="grid gap-2 lg:grid-cols-3 xl:mx-16 xl:my-28 lg:mx-16 lg:my-28 md:mx-16 md:my-28 mx-5 my-10">
         {posts.map((items, key) => (
-          <div className="w-full rounded-2xl shadow-md lg:max-w-sm" key={key}>
+          <div className=" rounded-2xl shadow-md lg:max-w-sm mb-5" key={key}>
             <img
-              className="object-cover w-full h-72 rounded-t-2xl"
+              className="object-cover w-full h-72  rounded-t-2xl"
               src={items.img}
               alt="image"
             />

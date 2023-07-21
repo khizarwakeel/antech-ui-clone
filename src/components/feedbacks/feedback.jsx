@@ -9,18 +9,18 @@ const FeedBack = () => {
   return (
     <div>
       <div className="bg-white dark:bg-gray-900 bg-[url('/assets/Background2.png')]">
-        <div className="pt-20 pl-28">
+        <div className="xl:pt-20 xl:pl-28 lg:pt-20 lg:pl-28 md:pt-20 md:pl-28 pl-10 pt-10">
           <h1 className="mb-5 text-2xl text-sky-500">Testimonials</h1>
           <h2 className="mb-5 text-4xl font-semibold">What Our Clients Say</h2>
         </div>
-        <div className="flex">
+        <div className="lg:flex lg:flex-row flex-col">
           <Swiper
             slidesPerView={1}
             pagination={{
               clickable: true,
             }}
             modules={[Pagination]}
-            className="mySwiper mx-24 pt-4 max-w-xl"
+            className="mySwiper mx-10 xl:mx-24 lg:mx-24 md:mx-24 pt-4 xl:max-w-xl lg:max-w-xs max-w-lg"
           >
             <SwiperSlide>
               <section class="bg-white dark:bg-gray-900">
@@ -149,8 +149,12 @@ const FeedBack = () => {
               </section>
             </SwiperSlide>
           </Swiper>
-          <div className="flex items-center mr-20">
-            <img src="/assets/testimonialimg.webp" alt="Discover Company" />
+          <div className="flex items-center md:w-96 md:h-96 md:mx-auto lg:mt-5 lg:w-[500px] xl:ml-10 lg:ml-10">
+            <img
+              src="/assets/testimonialimg.webp"
+              alt="Discover Company"
+              className=""
+            />
           </div>
         </div>
       </div>
